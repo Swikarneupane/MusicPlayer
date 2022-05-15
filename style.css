@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+html{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: beige;
+}
+body{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+#player{
+    width: 60%;
+    margin: auto;
+    padding: 2rem;
+}
+#controls{
+    background-color: rgb(204, 195, 184);
+    border: 2px solid ;
+    width: 60%;
+    margin: auto;
+    padding: 2rem;
+}
+#songsWrapper{
+    width: 60%;
+    border: none;
+    margin: auto;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+h2{
+    font-weight: bold;
+    font-size: 2rem;
+}
+li{
+    cursor: pointer;
+    padding: 1rem;
+}
+li:hover{
+    background-color: white;
+    color: skyblue;
+}
+#volume > span{
+    font-size: 2rem;
+    cursor: pointer;
+}
+#controlsWrapper > span{
+    cursor: pointer;
+    font-size: 5rem;
+}
+p{
+    font-size: 1.3rem;
+}
+progress{
+    width: 50%;
+    height: 1rem;
+    background-color: white;
+    color: rgb(248, 242, 242);
+    border: none;
+    border-radius: 3rem;
+    margin-bottom: 22px;
+}
+img{
+    height: 50%;
+    width: 50%;
+}
+
+.pulse{
+    animation: pulse;
+    animation-duration: 0.4s;
+}
+
+@keyframes pulse{
+    from{
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}

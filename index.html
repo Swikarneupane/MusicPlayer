@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Music Player</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="playerWrapper">
-        <img src="./heaphones.svg" alt="headphones image" id="headphones" />
-        <audio id="player" ontimeupdate="updateProgress()">
-            <source id="source" src="songs/bensound-buddy.mp3" />
-            Audio not supported
-        </audio>
-
+      <img src="./heaphones.svg" alt="headphones image" id="headphones" />
+      <audio id="player" ontimeupdate="updateProgress()">
+        <source id="source" src="songs/bensound-buddy.mp3" />
+        Audio not supported
+      </audio>
     </div>
-    
+
     <progress id="progressBar" value="0" max="100"></progress>
-    
+
     <div id="controls">
-        <p id="currentSong"></p>
-        <div id="controlsWrapper">
-            <span onclick="playAudio()" id="play">&#9658;</span>
-            <span onclick="pauseAudio()" id="pause">&#10074;&#10074;</span>
-        </div>
-        <p>Volume:</p>
-        <span id="volumeTot">50%</span>
-        <div id="volume">
-            <span onclick="volDown()">-</span>
-            <input type="range" id="volumeSlider" value="0.5" min="0" max="1" step="0.01">
-            <span onclick="volUp()">+</span>
-        </div>
+      <p id="currentSong"></p>
+      <div id="controlsWrapper">
+        <span onclick="playAudio()" id="play">&#9658;</span>
+        <span onclick="pauseAudio()" id="pause">&#10074;&#10074;</span>
+      </div>
+      <p>Volume:</p>
+      <span id="volumeTot">50%</span>
+      <div id="volume">
+        <span onclick="volDown()">-</span>
+        <input
+          type="range"
+          id="volumeSlider"
+          value="0.5"
+          min="0"
+          max="1"
+          step="0.01" />
+        <span onclick="volUp()">+</span>
+      </div>
     </div>
 
-    <h2>My Songs:</h2>
-    <div id="songsWrapper">
-        
-    </div>
+    <h2>Songs:</h2>
+    <div id="songsWrapper"></div>
+    <!-- <div id="addSongWrapper">
+        <label for="addSong">Add a song</label>
+      <input id="addSong" type="file" name="addSong" />
+    </div> -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

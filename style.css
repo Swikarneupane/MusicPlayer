@@ -111,9 +111,14 @@ img {
   background-color: rgb(204, 195, 184);
   text-align: center;
   width: 30%; */
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
+  width: 200px;
+  height: 100px;
+  opacity: 0.9;
+  background-color: burlywood;
+  border-radius: 10%;
+  margin-bottom: 2px;
+  font-size: 1.5rem;
+  cursor: pointer;
   overflow: hidden;
   position: absolute;
   z-index: -1;

@@ -5,9 +5,27 @@ html{
     text-align: center;
     background-color: beige;
 }
+
 body{
     margin: 0;
     font-family: 'Work Sans', sans-serif;
+}
+#headphones{
+    width: 30%;
+    height: 30%;
+    margin: auto;
+    padding: 2rem;
+}
+#addSong{
+    background-color: rgb(204, 195, 184);
+    border: 2px solid ;
+    width: 30%;
+    margin: auto;
+    margin-top: 20px;
+    height: 40%;
+    padding: 2rem;
+    text-decoration-color: bisque;
+    font-size: 1.2rem;
 }
 #player{
     width: 60%;

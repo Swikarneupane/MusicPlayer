@@ -41,10 +41,14 @@
 
     <h2>Songs:</h2>
     <div id="songsWrapper"></div>
-    <!-- <div id="addSongWrapper">
-        <label for="addSong">Add a song</label>
-      <input id="addSong" type="file" name="addSong" />
-    </div> -->
+    <form id="songForm">
+      <div id="addSongWrapper">
+        <!-- <label for="addSong">Add a song</label> -->
+        <input type="file" id="audioFile" accept=".mp3, .wav" required>
+    </div>
+    <input type="submit" id="addSong" value="Add Song" />  
+    </form>
+    <br>
     <script src="script.js"></script>
   </body>
 </html>
